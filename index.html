@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MumbaiMobileFix - Professional Mobile Repair Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23a5f3fc' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="bi bi-tools text-cyan-600 text-2xl"></i>
+                    <span class="font-bold text-xl text-gray-800">MumbaiMobileFix</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-cyan-600">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-cyan-600">Services</a>
+                    <a href="#brands" class="text-gray-600 hover:text-cyan-600">Brands</a>
+                    <a href="#contact" class="text-gray-600 hover:text-cyan-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-600 hover:text-cyan-600">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block py-2 px-4 text-gray-600 hover:bg-cyan-50">Home</a>
+            <a href="#services" class="block py-2 px-4 text-gray-600 hover:bg-cyan-50">Services</a>
+            <a href="#brands" class="block py-2 px-4 text-gray-600 hover:bg-cyan-50">Brands</a>
+            <a href="#contact" class="block py-2 px-4 text-gray-600 hover:bg-cyan-50">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern pt-24 pb-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                        Expert Mobile Repair Services in Mumbai
+                    </h1>
+                    <p class="text-gray-600 mb-6">
+                        Professional repair services for all major brands. Quick, reliable, and affordable solutions for your mobile device issues.
+                    </p>
+                    <a href="#contact" class="inline-block bg-cyan-600 text-white px-6 py-3 rounded-lg hover:bg-cyan-700 transition duration-300">
+                        Book Repair Now
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=1000" 
+                             alt="Mobile Repair Service" 
+                             class="w-full rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <i class="bi bi-display text-4xl text-cyan-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Screen Repair</h3>
+                    <p class="text-gray-600">Expert screen replacement service for all types of mobile devices.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <i class="bi bi-battery-charging text-4xl text-cyan-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Battery Replacement</h3>
+                    <p class="text-gray-600">Get your device's battery replaced with genuine parts.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <i class="bi bi-water text-4xl text-cyan-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Water Damage Repair</h3>
+                    <p class="text-gray-600">Professional water damage treatment and recovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section id="brands" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Brands We Repair</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center">
+                    <i class="bi bi-apple text-5xl text-gray-800 mb-2"></i>
+                    <span class="text-gray-600">iPhone</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="bi bi-phone text-5xl text-gray-800 mb-2"></i>
+                    <span class="text-gray-600">Samsung</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="bi bi-phone-fill text-5xl text-gray-800 mb-2"></i>
+                    <span class="text-gray-600">OnePlus</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="bi bi-phone-vibrate text-5xl text-gray-800 mb-2"></i>
+                    <span class="text-gray-600">Xiaomi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Book a Repair</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyan-600">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Phone</label>
+                            <input type="tel" required class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyan-600">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Device Issue</label>
+                            <textarea required class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyan-600 h-32"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-cyan-600 text-white px-6 py-3 rounded-lg hover:bg-cyan-700 transition duration-300">
+                            Send Request
+                        </button>
+                    </form>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Visit Us</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <i class="bi bi-geo-alt text-cyan-600 text-xl"></i>
+                            <p class="text-gray-600">123 Tech Street, Andheri West, Mumbai, Maharashtra 400053</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="bi bi-telephone text-cyan-600 text-xl"></i>
+                            <p class="text-gray-600">+91 98765 43210</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="bi bi-envelope text-cyan-600 text-xl"></i>
+                            <p class="text-gray-600">info@mumbaimobilefix.com</p>
+                        </div>
+                        <div class="flex items-center space-x-4 mt-6">
+                            <a href="#" class="text-gray-600 hover:text-cyan-600">
+                                <i class="bi bi-facebook text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-cyan-600">
+                                <i class="bi bi-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-cyan-600">
+                                <i class="bi bi-whatsapp text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">MumbaiMobileFix</h4>
+                    <p class="text-gray-400">Professional mobile repair services in Mumbai.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#brands" class="text-gray-400 hover:text-white">Brands</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Working Hours</h4>
+                    <p class="text-gray-400">Monday - Saturday: 10:00 AM - 8:00 PM</p>
+                    <p class="text-gray-400">Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2023 MumbaiMobileFix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth Scroll for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            alert('Thank you for your inquiry! We will contact you soon.');
+            contactForm.reset();
+        });
+
+        // Scroll to Top Button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector('.scroll-to-top').classList.remove('hidden');
+            } else {
+                document.querySelector('.scroll-to-top').classList.add('hidden');
+            }
+        };
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
